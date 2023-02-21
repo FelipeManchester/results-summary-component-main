@@ -5,17 +5,20 @@ async function fetchData() {
 }
 
 function handleData(data) {
-  const categoryList = document.querySelectorAll('li');
-  const scoreList = document.querySelectorAll('#score');
-  console.log(scoreList);
-  data.forEach((element, index) => {
-    document.body.innerHTML += `
-    <ul>
-      <li>${element.category}<span> ${element.score} / 100 </li>
-    </ul>
-    </div>
-    `;
+  let list = document.querySelectorAll('li');
+  let myResult = document.getElementById('result');
+  let totalScore = 0;
+
+  let i = 0;
+  list.forEach((e) => {
+    console.log(e.childNodes[1]);
+    e.childNodes[1].src = data[i].icon;
+    e.childNodes[3].textContent = data[i].category;
+    e.lastElementChild.textContent = data[i].score;
+    totalScore += data[i].score;
+    i++;
   });
+  myResult.innerHTML = Math.round(totalScore / 4);
 }
 
 fetchData();

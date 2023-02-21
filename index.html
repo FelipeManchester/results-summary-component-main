@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+  <link rel="stylesheet" href="style.css" />
   <title>Frontend Mentor | Results summary component</title>
 </head>
 
@@ -14,51 +14,40 @@
   <div class="overall">
     <p>Your result</p>
     <div class="score">
-      <span>76</span>
+      <span id="result">76</span>
       <p>of 100</p>
     </div>
     <h1>Great</h1>
-    <p>You scored higher than 65% of the people who have taken these tests.</p>
+    <p>
+      You scored higher than 65% of the people who have taken these tests.
+    </p>
   </div>
-  <div class="summary">
+  <div class="Summary">
     <h2>Summary</h2>
     <ul>
-      <li><span id='score'></span></li>
-      <li><span id='score'></span></li>
-      <li><span id='score'></span></li>
-      <li><span id='score'></span></li>
+      <li>
+        <img alt='image of a thunder representing result of reaction test' aria-hidden="true" />
+        <p></p>
+        <span></span> / 100
+      </li>
+      <li>
+        <img alt="image of a brain representing result of a memory test" aria-hidden="true" />
+        <p></p>
+        <span></span> / 100
+      </li>
+      <li>
+        <img alt="image of a talk balloon representing result of a verbal test" aria-hidden="true" />
+        <p></p>
+        <span></span> / 100
+      </li>
+      <li>
+        <img alt="image of a eye representing result of a visual test" aria-hidden="true" />
+        <p></p>
+        <span></span> / 100
+      </li>
     </ul>
   </div>
-  <script>
-    async function fetchData() {
-      const res = await fetch('data.json');
-      const data = await res.json();
-      handleData(data);
-    }
-
-    function handleData(data) {
-
-      //         let list = document.querySelectorAll("li");
-      // let myResult = document.querySelector(".my-result");
-      // let totalScore = 0;
-      // fetch("data.json")
-      //   .then((response) => response.json())
-      //   .then((json) => {
-      //     let i = 0;
-      //     list.forEach((e) => {
-      //       e.firstElementChild.firstElementChild.src = json[i].icon;
-      //       e.firstElementChild.lastElementChild.textContent = json[i].category;
-      //       e.lastElementChild.firstElementChild.textContent = json[i].score;
-      //       totalScore += json[i].score;
-      //       i++;
-      //     });
-      //     myResult.innerHTML = Math.round(totalScore / 4);
-      //   });
-      //       });
-    }
-
-    fetchData();
-  </script>
+  <script src="./scripts.js"></script>
 </body>
 
 </html>
