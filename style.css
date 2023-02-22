@@ -36,6 +36,20 @@ body {
   font-family: 'Hanken Grotesk', sans-serif;
 }
 
+#container button {
+  margin: 0 auto;
+  display: block;
+  border-radius: 40px;
+  border: none;
+  text-align: center;
+  width: 20rem;
+  height: 3.5rem;
+  background: var(--Dark-gray-blue);
+  font-size: 1.2rem;
+  color: var(--Pale-blue);
+  cursor: pointer;
+}
+
 #overall {
   width: 100vw;
   height: 360px;
@@ -70,8 +84,8 @@ body {
   flex-direction: column;
 }
 
-.score span {
-  font-size: 2rem;
+#result {
+  font-size: 3rem;
   font-weight: 800;
 }
 
@@ -90,7 +104,11 @@ ul {
 
 li {
   display: flex;
-  align-items: center;
+  justify-content: left;
+}
+
+li span:last-child {
+  color: hsla(224, 30%, 27%, 0.5);
 }
 
 #reaction {
@@ -98,6 +116,11 @@ li {
   background: var(--Light-red-background);
   border-radius: 10px;
   padding: 0.8rem;
+}
+
+#summary p {
+  flex: 1;
+  margin-left: 1rem;
 }
 
 #memory {
