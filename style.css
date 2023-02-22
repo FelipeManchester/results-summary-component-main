@@ -10,13 +10,13 @@
   --Violet-blue-circle: hsla(256, 72%, 46%, 1);
   --Persian-blue-circle: hsla(241, 72%, 46%, 0);
   --Light-red: hsl(0, 100%, 67%);
-  --Light-red-background: hsla(0, 100%, 67%, 0.1);
+  --Light-red-background: hsla(0, 100%, 67%, 0.05);
   --Orangey-yellow: hsl(39, 100%, 56%);
-  --Orangey-yellow-background: hsla(39, 100%, 56%, 0.1);
+  --Orangey-yellow-background: hsla(39, 100%, 56%, 0.05);
   --Green-teal: hsl(166, 100%, 37%);
-  --Green-teal-background: hsla(166, 100%, 37%, 0.1);
+  --Green-teal-background: hsla(166, 100%, 37%, 0.05);
   --Cobalt-blue: hsl(234, 85%, 45%);
-  --Cobalt-blue-background: hsla(234, 85%, 45%, 0.1);
+  --Cobalt-blue-background: hsla(234, 85%, 45%, 0.05);
 }
 
 /* - Font size (paragraphs): 18px
@@ -36,8 +36,35 @@ body {
   font-family: 'Hanken Grotesk', sans-serif;
 }
 
-#container button {
+p {
+  font-size: 18px;
+}
+
+ul {
+  margin-top: 1.5rem;
+}
+
+li {
+  display: flex;
+  justify-content: left;
+}
+
+li span:last-child {
+  color: hsla(224, 30%, 27%, 0.5);
+}
+
+li span:nth-child(3) {
+  color: var(--Dark-gray-blue);
+  margin-right: 5px;
+}
+
+span {
+  font-weight: bold;
+}
+
+#summary button {
   margin: 0 auto;
+  margin-top: 1.5rem;
   display: block;
   border-radius: 40px;
   border: none;
@@ -48,6 +75,14 @@ body {
   font-size: 1.2rem;
   color: var(--Pale-blue);
   cursor: pointer;
+  transition: 0.4s;
+}
+
+#summary button:hover {
+  background: linear-gradient(
+    var(--Light-slate-blue-background) 0%,
+    var(--Light-royal-blue-background) 100%
+  );
 }
 
 #overall {
@@ -59,11 +94,12 @@ body {
   );
   border-radius: 0 0 30px 30px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
   text-align: center;
-  color: var(--Pale-blue);
+  color: var(--White);
+  padding: 2rem;
 }
 
 #overall p {
@@ -84,9 +120,14 @@ body {
   flex-direction: column;
 }
 
+#score p {
+  color: hsla(221, 100%, 96%, 0.5);
+}
+
 #result {
   font-size: 3rem;
   font-weight: 800;
+  color: var(--White);
 }
 
 #summary {
@@ -96,19 +137,6 @@ body {
 #summary h2 {
   color: var(--Dark-gray-blue);
   font-size: 1.3rem;
-}
-
-ul {
-  margin-top: 1.5rem;
-}
-
-li {
-  display: flex;
-  justify-content: left;
-}
-
-li span:last-child {
-  color: hsla(224, 30%, 27%, 0.5);
 }
 
 #reaction {
@@ -145,4 +173,13 @@ li span:last-child {
   border-radius: 10px;
   padding: 0.8rem;
   margin-top: 1rem;
+}
+
+@media (min-width: 767px) {
+  #container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  }
 }
