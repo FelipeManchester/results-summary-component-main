@@ -17,19 +17,21 @@ This is a solution to the [Results summary component challenge on Frontend Mento
 
 ### The challenge
 
-![](./design/desktop-design.jpg)
-![](./design/active-states.jpg)
-![](./design/mobile-design.jpg)
+<img src="./design/desktop-design.jpg" width='600px'>
+<img src="./design/active-states.jpg" width='600px'>
+<img src="./design/mobile-design.jpg" width='300px'>
+
 
 ### Screenshot
+<img src="./design/fullpage.png" width='600px'>
+<img src="./design/mobile.png" width='300px'>
 
-![](./design/fullpage.png)
-![](./design/mobile.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+-[Solution](https://github.com/FelipeManchester/results-summary-component-main)
+<br />
+-[Deploy](https://felipemanchester.github.io/results-summary-component-main/)
 
 ## My process
 
