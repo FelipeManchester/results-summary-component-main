@@ -81,4 +81,4 @@ async function fetchData() {
 ## Author
 
 - Website - [Felipe Manchester](https://www.linkedin.com/in/FelipeManchester)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/FelipeManchester)
+- Frontend Mentor - [Felipe Manchester](https://www.frontendmentor.io/profile/FelipeManchester)
