@@ -11,8 +11,6 @@ function handleData(data) {
 
   let i = 0;
   list.forEach((e) => {
-    console.log(e.childNodes[5]);
-    console.log(e.childNodes[1]);
     e.childNodes[1].src = data[i].icon;
     e.childNodes[3].textContent = data[i].category;
     e.childNodes[5].textContent = data[i].score;
